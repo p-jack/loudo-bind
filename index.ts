@@ -236,7 +236,7 @@ HTMLElement.prototype.bindAttr = function<T extends object>(
   return this
 }
 
-HTMLElement.prototype.bindAttr = function(this:HTMLElement):typeof this {
+HTMLElement.prototype.lingerBindings = function(this:HTMLElement):typeof this {
   (this as any)[lingerSymbol] = true
   return this
 }

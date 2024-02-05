@@ -1,11 +1,19 @@
 import { loudify } from "loudify"
 import { i18nWith } from "./index"
 
+import { 
+  afterEach,
+  beforeEach,
+  describe,
+  expect,
+  test,
+} from 'vitest'
+
 describe("attributes", () => {
   test("XSS: illegal tag", () => {
     const model = loudify({n:11})
-    const iframe = document.createElement("script")
-    expect(() => { iframe.bindAttr("data-test", model, "n") }).toThrow("XSS: no bindings allowed on SCRIPT tag.")
+    const script = document.createElement("script")
+    expect(() => { script.bindAttr("data-test", model, "n") }).toThrow("XSS: no bindings allowed on SCRIPT tag.")
   })
   test("XSS: event handler", () => {
     const model = loudify({n:11})
