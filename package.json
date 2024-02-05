@@ -1,0 +1,41 @@
+{
+  "name": "loudo-bind",
+  "version": "1.0.1",
+  "description": "Create \"Loud\" objects that can broadcast changes.",
+  "main": "dist/index.js",
+  "type": "module",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p-jack/loudo-bind.git"
+  },
+  "author": "Paul Jack",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/p-jack/loudo-bind/issues"
+  },
+  "homepage": "https://github.com/p-jack/loudo-bind#readme",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.1",
+    "@types/jest": "^29.5.12",
+    "@types/web": "^0.0.138",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "loudify": "^1.0.4"
+  }
+}
