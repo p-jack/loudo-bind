@@ -1,6 +1,6 @@
 {
   "name": "loudo-bind",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Bind loud objects to HTMLElements.",
   "main": "dist/index.js",
   "type": "module",
